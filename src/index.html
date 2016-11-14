@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="什么值得投,一个专业的理财产品推荐平台">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1,minimum-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set render engine for 360 browser 360浏览器-->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp 百度浏览器>-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!-- HTML5 shim for IE8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./vendors/Font-Awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./vendors/jquery/dist/jquery.min.js"></script>
+    <script src="./vendors/lib/mobilecheck.js"></script>
+    <title>什么值得投 | 中国领先的投资理财导购平台</title>
+    <script type="text/javascript">
+      //判断是否是手机访问
+       if(mobilecheck()){
+          // window.location.href="http://localhost:3000/about.html";
+       }
+   </script>
+</head>
+
+<body>
+    <div class="page-container">
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <ul class="header-top-1">
+                        <li class="pull-right">
+                           <a href="login.html" class="login">登陆</a><a href="register.html" class="login">注册</a><a href="college.html">新手引导</a><a href="about.html" class="larst-right">关于我们</a>
+                        </li>
+                        <li class="header-top-gzwm">
+                            <div class="pull-left first">关注我们：</div>
+                            <div class="wx pull-left"></div>
+                            <div class="wb pull-left"></div>
+                            <div class="qq pull-left"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-top-3">
+                <div class="container">
+                    <ul class="header-top-2">
+                        <li class="pull-right">
+                            <!-- <div class="btn-group" style="z-index:9998;"> -->
+                                <div class="btn-group" id="wdzh" style="z-index:1001;">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                      <div class="pull-right avatar">
+                                        <span>我的账户</span>
+                                        <span class="caret"></span>
+                                      </div>
+                                      <img src="./images/img.jpg" class="img-circle"  alt="头像" width="66px" height="66px">
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="center.html">我的理财</a></li>
+                                        <li><a href="tbhistory.html">投标记录</a></li>
+                                        <li><a href="userinfo.html">账户信息</a></li>
+                                        <li><a href="mingxi.html">交易明细</a></li>
+                                        <li><a href="message.html">消息中心</a></li>
+                                    </ul>
+                                </div>
+                            <!-- </div> -->
+                        </li>
+                        <li  id="logo">
+                            <a href="/" title="什么值得投">
+                                <img src="./images/logo.png" alt="什么值得投">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">&nbsp;首页&nbsp;</a></li>
+                    <li><a href="list.html">网贷理财</a></li>
+                    <li><a href="superfl.html">超级返</a></li>
+                    <li><a href="college.html">投资学院</a></li>
+                    <li><a href="protective.html">火眼金睛</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <div class="carousel slide" id="slideshow" data-ride="carousel" data-interval="2500" data-pause="false" data-wrap="true">
+                <ol class="carousel-indicators">
+                    <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+                    <li data-target="#slideshow" data-slide-to="1"></li>
+                    <li data-target="#slideshow" data-slide-to="2" ></li>
+                    <li data-target="#slideshow" data-slide-to="4"></li>
+                    <li data-target="#slideshow" data-slide-to="5" ></li>
+
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <a href="http://www.baidu.com"><img src="images/banner.jpg" alt="" style="height:400px;width:100%"></a>
+                    </div>
+                    <div class="item">
+                        <a href="http://www.baidu.com"><img src="images/banner.jpg" alt="" style="height:400px;width:100%"></a>
+                    </div>
+                    <div class="item">
+                        <a href="http://www.baidu.com"><img src="images/banner.jpg" alt="" style="height:400px;width:100%"></a>
+                    </div>
+                    <div class="item">
+                        <a href="http://www.baidu.com"><img src="images/banner.jpg" alt="" style="height:400px;width:100%"></a>
+                    </div>
+                    <div class="item">
+                        <a href="http://www.baidu.com"><img src="images/banner.jpg" alt="" style="height:400px;width:100%"></a>
+                    </div>
+                </div>
+                <a href="#slideshow" data-slide="prev" class="left carousel-control">
+
+                               <img src="images/jiantouleft.png"  class="glyphicon-chevron-left  left1" alt="" >
+
+
+
+                </a>
+                <a href="#slideshow" data-slide="next" class="right carousel-control">
+
+                        <img src="images/jiantouright.png" class="glyphicon-chevron-left" alt="" >
+
+                </a>
+            </div>
+        </section>
+        <section class="bz">
+            <div class="container text-center">
+                <div class="col-xs-3">
+                    <img src="./images/safe.jpg" alt="严厉审查合作背景">
+                    <div class="clearfix"></div>
+                    <span>严厉审查合作背景</span>
+                </div>
+                <div class="col-xs-3">
+                    <img src="./images/eye.jpg" alt="火眼金睛保障安全">
+                    <div class="clearfix"></div>
+                    <span>火眼金睛保障安全</span>
+                </div>
+                <div class="col-xs-3">
+                    <img src="./images/shuju.jpg" alt="大数据分析降低风险">
+                    <div class="clearfix"></div>
+                    <span>大数据分析降低风险</span>
+                </div>
+                <div class="col-xs-3">
+                    <img src="./images/money.jpg" alt="额外返利双重收益">
+                    <div class="clearfix"></div>
+                    <span>额外返利双重收益</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="page-header container checkbox-list">
+                <h1><img src="./images/fenlei.jpg" alt=""> <span class="list-title">网贷理财推荐</span><small class="pull-right"><a href="list.html">查看更多理财产品&nbsp;<i class="icon-double-angle-right"></i></a></small></h1>
+            </div>
+            <div class="container text-center list">
+                <div class="col-xs-2">
+                    <a href="#">
+                        <img src="./images/nwd.jpg" width="135px" height="50px">
+                    </a>
+                    <div class="clearfix"></div>
+                    <span>保障模式</span>
+                    <div class="clearfix"></div>
+                    <span>担保机构</span>
+                </div>
+                <div class="col-xs-8">
+                    <h4 class="pull-left">合拍在线测试项目</h4>
+                    <div class="clearfix"></div>
+                    <div class="col-xs-3">
+                        <span class="span0">预期年化收益率</span>
+                        <div class="clearfix"></div>
+                        <span class="span1">7</span><span class="span2">%</span>
+                    </div>
+                    <div class="col-xs-3">
+                        <span class="span0">什么值得投再返利</span>
+                        <div class="clearfix"></div>
+                        <span class="span1">2</span><span class="span2">元</span>
+                    </div>
+                    <div class="col-xs-3">
+                        <span class="span0">投资期限</span>
+                        <div class="clearfix"></div>
+                        <span class="span3">1</span><span class="span4">个月</span>
+                    </div>
+                    <div class="col-xs-3 last-list">
+                        <span class="span0">起投金额</span>
+                        <div class="clearfix"></div>
+                        <span class="span3">1,000</span><span class="span4">元</span>
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <a href="item.html" class="btn btn-primary btn-lg">马上投资</a>
+                </div>
+            </div>
+            <div class="container text-center list">
+                <div class="col-xs-2">
+                    <a href="#">
+                        <img src="./images/nwd.jpg" width="135px" height="50px">
+                    </a>
+                    <div class="clearfix"></div>
+                    <span>保障模式</span>
+                    <div class="clearfix"></div>
+                    <span>担保机构</span>
+                </div>
+                <div class="col-xs-8">
+                    <h4 class="pull-left">合拍在线测试项目</h4>
+                    <div class="clearfix"></div>
+                    <div class="col-xs-3">
+                        <span class="span0">预期年化收益率</span>
+                        <div class="clearfix"></div>
+                        <span class="span1">7</span><span class="span2">%</span>
+                    </div>
+                    <div class="col-xs-3">
+                        <span class="span0">什么值得投再返利</span>
+                        <div class="clearfix"></div>
+                        <span class="span1">2</span><span class="span2">元</span>
+                    </div>
+                    <div class="col-xs-3">
+                        <span class="span0">投资期限</span>
+                        <div class="clearfix"></div>
+                        <span class="span3">1</span><span class="span4">个月</span>
+                    </div>
+                    <div class="col-xs-3 last-list">
+                        <span class="span0">起投金额</span>
+                        <div class="clearfix"></div>
+                        <span class="span3">1,000</span><span class="span4">元</span>
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <a href="item.html" class="btn btn-primary btn-lg">马上投资</a>
+                </div>
+            </div>
+            <div class="container text-center list">
+                <div class="col-xs-2">
+                    <a href="#">
+                        <img src="./images/nwd.jpg" width="135px" height="50px">
+                    </a>
+                    <div class="clearfix"></div>
+                    <span>保障模式</span>
+                    <div class="clearfix"></div>
+                    <span>担保机构</span>
+                </div>
+                <div class="col-xs-8">
+                    <h4 class="pull-left">合拍在线测试项目</h4>
+                    <div class="clearfix"></div>
+                    <div class="col-xs-3">
+                        <span class="span0">预期年化收益率</span>
+                        <div class="clearfix"></div>
+                        <span class="span1">7</span><span class="span2">%</span>
+                    </div>
+                    <div class="col-xs-3">
+                        <span class="span0">什么值得投再返利</span>
+                        <div class="clearfix"></div>
+                        <span class="span1">2</span><span class="span2">元</span>
+                    </div>
+                    <div class="col-xs-3">
+                        <span class="span0">投资期限</span>
+                        <div class="clearfix"></div>
+                        <span class="span3">1</span><span class="span4">个月</span>
+                    </div>
+                    <div class="col-xs-3 last-list">
+                        <span class="span0">起投金额</span>
+                        <div class="clearfix"></div>
+                        <span class="span3">1,000</span><span class="span4">元</span>
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <a href="item.html" class="btn btn-default btn-lg disabled" style="background:#ccc">已结束</a>
+                </div>
+            </div>
+            <div class="container text-center getmore">
+                <a href="#">查看更多<i class="icon-double-angle-right"></i></a>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="panel panel-default col-xs-8">
+                    <div class="panel-heading">
+                        <h3 class="panel-title" >&nbsp;<img src="./images/laba.jpg" width="24px" height="22px"> 最新动态<small class="pull-right"><a href="#">更多&nbsp;<i class="icon-angle-right"></i></a></small></h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul id="card">
+                            <li><a href="#">别随便查征信，会影响申卡下卡率？</a><time class="pull-right">2016-09-27 16:10:00</time></li>
+                            <li><a href="#">《全国住房公积金2015年年度报告》发</a><time class="pull-right">2016-09-27 16:10:00</time></li>
+                            <li><a href="#">止损还是分散投资？快跟这些动物学理财</a><time class="pull-right">2016-09-27 16:10:00</time></li>
+                            <li><a href="#">没有存在感？赶紧提高你的核心竞争</a><time class="pull-right">2016-09-27 16:10:00</time></li>
+                            <li><a href="#">8招助你成为千万富翁（已经过亿的勿</a><time class="pull-right">2016-09-27 16:10:00</time></li>
+                            <li><a href="#">那么多隐性富豪城市 其实你不非得扎</a><time class="pull-right">2016-09-27 16:10:00</time></li>
+                            <li><a href="#">盛大抄底美国P2P龙头公司,称看好美国P2P模式</a><time class="pull-right">2016-09-27 16:10:00</time></li>
+                            <li><a href="#">为什么P2P兴起于美国，却繁荣与中国？</a><time class="pull-right">2016-09-27 16:10:00</time></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-default col-xs-4">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">&nbsp;<img src="./images/guanzu.jpg" width="24px" height="22px">&nbsp;行业关注  <small class="pull-right"><a href="#">更多&nbsp;<i class="icon-angle-right"></i></a></small></h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li><a href="#">什么值得投教你如何选靠谱平台！</a><span class="pull-right">231</span></li>
+                            <li><a href="#">什么值得投教你如何选靠谱平台！</a><span class="pull-right">231</span></li>
+                            <li><a href="#">什么值得投教你如何选靠谱平台！</a><span class="pull-right">231</span></li>
+                            <li><a href="#">什么值得投教你如何选靠谱平台！</a><span class="pull-right">231</span></li>
+                            <li><a href="#">什么值得投教你如何选靠谱平台！</a><span class="pull-right">231</span></li>
+                            <li><a href="#">什么值得投教你如何选靠谱平台！</a><span class="pull-right">231</span></li>
+                            <li><a href="#">什么值得投教你如何选靠谱平台！</a><span class="pull-right">231</span></li>
+                            <li><a href="#">什么值得投教你如何选靠谱平台！</a><span class="pull-right">231</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-6 tops tops-left">
+                    <div class="page-header">
+                        <h4><img src="./images/bang.jpg"  width="26px" height="24px">&nbsp;<span>月投排行榜</span><small class="pull-right"><a href="#">我的排行&nbsp;<i class="icon-double-angle-right"></i></a></small></h4>
+                        <span>据每月投资总额，下月7日系统自动发放相应奖励,月月有奖</span>
+                    </div>
+                    <ul>
+                        <li><img src="images/xuhao1.png" alt="1" /><span>151****0203</span> <span>本月投资 512,000.00元</span></li>
+                        <li><img src="images/xuhao2.png" alt="2" /><span>151****0203</span> <span>本月投资 512,000.00元</span></li>
+                        <li><img src="images/xuhao3.png" alt="3" /><span>151****0203</span> <span>本月投资 512,000.00元</span></li>
+                        <li><img src="images/xuhao4.png" alt="4" /><span>151****0203</span> <span>本月投资 512,000.00元</span></li>
+                        <li><img src="images/xuhao5.png" alt="5" /><span>151****0203</span> <span>本月投资 512,000.00元</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 tops">
+                    <div class="page-header">
+                        <h4><img src="./images/bang.jpg"  width="26px" height="24px">理财收益榜<small class="pull-right"><a href="#">我的排行&nbsp;<i class="icon-double-angle-right"></i></a></small></h4>
+                        <span>什么值得投，总能让您多赚点...</span>
+                    </div>
+                    <ul>
+                        <li><img src="images/xuhao1.png" alt="1" /><span>151****0203</span> <span>本月收益 512,000.00元</span> </li>
+                        <li><img src="images/xuhao2.png" alt="2" /><span>151****0203</span> <span>本月收益 512,000.00元</span> </li>
+                        <li><img src="images/xuhao3.png" alt="3" /><span>151****0203</span> <span>本月收益 512,000.00元</span></li>
+                        <li><img src="images/xuhao4.png" alt="4" /><span>151****0203</span> <span>本月收益 512,000.00元</span></li>
+                        <li><img src="images/xuhao5.png" alt="5" /><span>151****0203</span> <span>本月收益 512,000.00元</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row links-box">
+                <div class="container links">
+                    <span>友情链接:</span>
+                    <a href="#">百度</a><a href="#">百度</a><a href="#">百度</a><a href="#">百度</a><a href="#">百度</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- 弹出层开始 -->
+            <div class="modal fade" id="Hello" role="dialog" aria-labelledby="myModalLabel" style="z-index:9999;padding-top:80px;">
+                <div class="modal-dialog" role="document" style="width: 1200px;">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute;top: 40px;right: 58px;color: #ffffff;"><span aria-hidden="true"><i class="icon-remove-sign icon-2x"></i></span></button>
+                        <!-- <a href="{$eject_data['eject_link']}"><img src="{:sp_get_asset_upload_path($eject_data['eject_pic'])}" width="1200px" height="600px"></a> -->
+                        <a href="{$eject_data['eject_link']}"><img src="images/hello.png" width="1200px" height="600px"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="text-center footer-top">
+                <div class="container">
+                    <img src="./images/foottop.png" alt="">
+                </div>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="col-xs-4">
+                        <div class="col-xs-4">
+                            关于我们
+                            <ul class="text-left">
+                                <li><a href="#">公司简介</a></li>
+                                <li><a href="#">联系我们</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4">
+                            保障机制
+                            <ul class="text-left">
+                                <li><a href="#">明镜防护</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4">
+                            使用帮助
+                            <ul class="text-left">
+                                <li><a href="#">新手指引</a></li>
+                                <li><a href="#">名词解释</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                        <img src="images/gzwx.png" alt="关注微信微信" />
+                        <div class="clearfix"></div>
+                        <span>微信关注我们</span>
+                    </div>
+                    <div class="col-xs-4">
+                        <img class="pull-right" src="images/foot-logo.png" alt="foot-logo" />
+                        <div class="clearfix"></div>
+                        <ul class="text-right">
+                            <li>
+                                <span><i class="icon-phone-sign"></i>&nbsp;400-123456</span>
+                            </li>
+                            <li>
+                                <span><i class="icon-time"></i>&nbsp;工作日 10:00-19:00</span>
+                            </li>
+                            <li><a href="#">意见反馈</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="text-center">
+                        &copy; 2016 什么值得投
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./vendors/jquery-cookie/jquery.cookie.js"></script>
+    <script src="./vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./vendors/layer/layer.js"></script>
+    <script src="./js/index.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(function () {
+          // 判断是否点击了欢迎页面
+          if (typeof($.cookie("Hellocookie")) == "undefined")
+          {
+            $('#Hello').modal('show');
+          }
+          $('#Hello').on('hide.bs.modal', function () {
+              var expiresDate= new Date();
+              expiresDate.setTime(expiresDate.getTime() + (10 * 60 * 1000)); // 这里的10是缓存时间即幻灯片显示时间间隔
+              $.cookie('Hellocookie', "hello", { expires: expiresDate });
+          });
+        })
+    </script>
+</body>
+
+</html>
